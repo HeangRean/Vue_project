@@ -16,10 +16,10 @@
             <RouterLink :to="`/`" class="text-white hover:text-gray-200" :class="{ 'underline': $route.path === '/' }">ទំព័រដើម</RouterLink>
           </li>
           <li>
-            <RouterLink to="/AplicationWorkView" class="text-white hover:text-gray-200" :class="{ 'underline': $route.path === '/AplicationWorkView' }">ព័ត៏មានថ្មីៗ</RouterLink>
+            <RouterLink to="/News" class="text-white hover:text-gray-200" :class="{ 'underline': $route.path === '/News' }">ព័ត៏មានថ្មីៗ</RouterLink>
           </li>
           <li>
-            <RouterLink to="/News" class="text-white hover:text-gray-200" :class="{ 'underline': $route.path === '/News' }">កម្មវិធីការងារ</RouterLink>
+            <RouterLink to="/AplicationWorkView" class="text-white hover:text-gray-200" :class="{ 'underline': $route.path === '/AplicationWorkView' }">កម្មវិធីការងារ</RouterLink>
           </li>
         </ul>
       </div>
