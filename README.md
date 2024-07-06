@@ -9,11 +9,29 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Veasna Song Management
+## Make sure we have npm and node
+## Check --Version NPM
+
+```
+npm -v
+```
+## Check --Version NODE
+
+```
+node -v
+```
 
 ## Project Setup
 
 ```sh
 npm install
+```
+
+## Install Node
+
+```
+node install
 ```
 
 ### Compile and Hot-Reload for Development
