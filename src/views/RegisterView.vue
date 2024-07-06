@@ -49,37 +49,50 @@ const handleRegister = () => {
   <div class="max-w-md mx-auto mt-10 bg-[#EBEBEB] shadow-md rounded-lg p-6 mb-20">
     <h1 class="text-2xl font-bold mb-6 text-center">Register</h1>
     <form @submit.prevent="handleRegister">
+      <!-- Full Name Input -->
       <div class="mb-4">
         <label class="block text-gray-700">Full Name</label>
         <input v-model="fullName" type="text" class="w-full px-3 py-2 border rounded" />
         <p v-if="errors.fullName" class="text-red-500 text-sm">{{ errors.fullName }}</p>
       </div>
+
+      <!-- E-mail Input -->
       <div class="mb-4">
         <label class="block text-gray-700">E-mail</label>
         <input v-model="email" type="email" class="w-full px-3 py-2 border rounded" />
         <p v-if="errors.email" class="text-red-500 text-sm">{{ errors.email }}</p>
       </div>
+
+      <!-- Phone Input -->
       <div class="mb-4">
         <label class="block text-gray-700">Phone</label>
         <input v-model="phone" type="tel" class="w-full px-3 py-2 border rounded" />
         <p v-if="errors.phone" class="text-red-500 text-sm">{{ errors.phone }}</p>
       </div>
+
+      <!-- Password Input -->
       <div class="mb-4">
         <label class="block text-gray-700">Password</label>
         <input v-model="password" type="password" class="w-full px-3 py-2 border rounded" />
         <p v-if="errors.password" class="text-red-500 text-sm">{{ errors.password }}</p>
       </div>
+
+      <!-- Confirm Password Input -->
       <div class="mb-4">
         <label class="block text-gray-700">Confirm Password</label>
         <input v-model="confirmPassword" type="password" class="w-full px-3 py-2 border rounded" />
         <p v-if="errors.confirmPassword" class="text-red-500 text-sm">{{ errors.confirmPassword }}</p>
       </div>
+
+      <!-- Register Button -->
       <div class="flex justify-center mb-12">
         <button type="submit" class="w-full bg-[#F4A517] text-white font-semibold py-2 px-4 rounded-sm hover:bg-[#e4ac42]">Register</button>
       </div>
+      <p class="text-center text-sm text-gray-600 mt-10 mb-32">Don't have an account? <RouterLink to="/Login" class="text-indigo-600 hover:underline">Login</RouterLink></p>  
     </form>
   </div>
 </template>
+
 
 <style scoped>
 /* Add any necessary styles here */
