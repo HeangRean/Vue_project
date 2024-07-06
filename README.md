@@ -28,6 +28,12 @@ node -v
 npm install
 ```
 
+## Install Node
+
+```
+node install
+```
+
 ### Compile and Hot-Reload for Development
 
 ```sh
